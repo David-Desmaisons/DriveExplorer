@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriveExplorer", "DriveExplorer\DriveExplorer.csproj", "{F90FDC6A-359D-4A0F-945E-FA4B4A45A4EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriveExplorer.Model", "DriveExplorer.Model\DriveExplorer.Model.csproj", "{D86F9565-7CA6-433E-B157-F811C2EFFCEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DriveExplorer.Model.Tests", "DriveExplorer.Model.Tests\DriveExplorer.Model.Tests.csproj", "{A1A3B21E-B3F1-4E7F-95E6-94DD82458081}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F90FDC6A-359D-4A0F-945E-FA4B4A45A4EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F90FDC6A-359D-4A0F-945E-FA4B4A45A4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F90FDC6A-359D-4A0F-945E-FA4B4A45A4EA}.Debug|x64.ActiveCfg = Debug|x64
+		{F90FDC6A-359D-4A0F-945E-FA4B4A45A4EA}.Debug|x64.Build.0 = Debug|x64
+		{F90FDC6A-359D-4A0F-945E-FA4B4A45A4EA}.Debug|x86.ActiveCfg = Debug|x86
+		{F90FDC6A-359D-4A0F-945E-FA4B4A45A4EA}.Debug|x86.Build.0 = Debug|x86
+		{F90FDC6A-359D-4A0F-945E-FA4B4A45A4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F90FDC6A-359D-4A0F-945E-FA4B4A45A4EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F90FDC6A-359D-4A0F-945E-FA4B4A45A4EA}.Release|x64.ActiveCfg = Release|Any CPU
+		{F90FDC6A-359D-4A0F-945E-FA4B4A45A4EA}.Release|x64.Build.0 = Release|Any CPU
+		{F90FDC6A-359D-4A0F-945E-FA4B4A45A4EA}.Release|x86.ActiveCfg = Release|x86
+		{F90FDC6A-359D-4A0F-945E-FA4B4A45A4EA}.Release|x86.Build.0 = Release|x86
+		{D86F9565-7CA6-433E-B157-F811C2EFFCEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D86F9565-7CA6-433E-B157-F811C2EFFCEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D86F9565-7CA6-433E-B157-F811C2EFFCEC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{D86F9565-7CA6-433E-B157-F811C2EFFCEC}.Debug|x64.Build.0 = Debug|Any CPU
+		{D86F9565-7CA6-433E-B157-F811C2EFFCEC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D86F9565-7CA6-433E-B157-F811C2EFFCEC}.Debug|x86.Build.0 = Debug|Any CPU
+		{D86F9565-7CA6-433E-B157-F811C2EFFCEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D86F9565-7CA6-433E-B157-F811C2EFFCEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D86F9565-7CA6-433E-B157-F811C2EFFCEC}.Release|x64.ActiveCfg = Release|Any CPU
+		{D86F9565-7CA6-433E-B157-F811C2EFFCEC}.Release|x64.Build.0 = Release|Any CPU
+		{D86F9565-7CA6-433E-B157-F811C2EFFCEC}.Release|x86.ActiveCfg = Release|Any CPU
+		{D86F9565-7CA6-433E-B157-F811C2EFFCEC}.Release|x86.Build.0 = Release|Any CPU
+		{A1A3B21E-B3F1-4E7F-95E6-94DD82458081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1A3B21E-B3F1-4E7F-95E6-94DD82458081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1A3B21E-B3F1-4E7F-95E6-94DD82458081}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A1A3B21E-B3F1-4E7F-95E6-94DD82458081}.Debug|x64.Build.0 = Debug|Any CPU
+		{A1A3B21E-B3F1-4E7F-95E6-94DD82458081}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A1A3B21E-B3F1-4E7F-95E6-94DD82458081}.Debug|x86.Build.0 = Debug|Any CPU
+		{A1A3B21E-B3F1-4E7F-95E6-94DD82458081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1A3B21E-B3F1-4E7F-95E6-94DD82458081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1A3B21E-B3F1-4E7F-95E6-94DD82458081}.Release|x64.ActiveCfg = Release|Any CPU
+		{A1A3B21E-B3F1-4E7F-95E6-94DD82458081}.Release|x64.Build.0 = Release|Any CPU
+		{A1A3B21E-B3F1-4E7F-95E6-94DD82458081}.Release|x86.ActiveCfg = Release|Any CPU
+		{A1A3B21E-B3F1-4E7F-95E6-94DD82458081}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {663282E5-672C-4B52-AA23-11B1A6AFD5DF}
+	EndGlobalSection
+EndGlobal
