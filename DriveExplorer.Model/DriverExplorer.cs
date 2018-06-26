@@ -1,19 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading;
 
-namespace DriverExplorer.Model 
+namespace DriveExplorer.Model 
 {
     public class DriverExplorer : IDriverExplorer 
     {
-        public List<string> AllDrives { get; }
+        public string[] AllDrives { get; }
 
         public DriverExplorer() 
         {
             var drives = DriveInfo.GetDrives();
-            AllDrives = drives.Select(d => d.Name).ToList();
+            AllDrives = drives.Select(d => d.Name).ToArray();
         }
 
         public DriveDescriptor GetDriveDescriptor(string name, IProgress<string> progress, CancellationToken cancellationToken) 

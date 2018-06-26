@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace DriverExplorer.ViewModel {
+namespace DriveExplorer.ViewModel {
     public class ApplicationInformation {
         public string Name => "Neutronium Vuetify SPA";
 

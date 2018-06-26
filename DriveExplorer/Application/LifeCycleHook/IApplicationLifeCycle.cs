@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
-using DriverExplorer.Application.Navigation;
+using DriveExplorer.Application.Navigation;
 
-namespace DriverExplorer.Application.LifeCycleHook {
+namespace DriveExplorer.Application.LifeCycleHook {
     public interface IApplicationLifeCycle {
         void OnNavigating(RoutingEventArgs routingEvent);
 

@@ -2,7 +2,7 @@
 using FluentAssertions;
 using Xunit;
 
-namespace DriverExplorer.Model.Tests
+namespace DriveExplorer.Model.Tests
 {
     public class ByteSizeTest 
     {

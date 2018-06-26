@@ -1,8 +1,8 @@
 ﻿using Neutronium.MVVMComponents;
 using Neutronium.MVVMComponents.Relay;
-using DriverExplorer.Application.WindowServices;
+using DriveExplorer.Application.WindowServices;
 
-namespace DriverExplorer.ViewModel.Modal {
+namespace DriveExplorer.ViewModel.Modal {
     public class MessageModalViewModel {
         public string Title { get; }
         public string Message { get; }

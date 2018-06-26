@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using MoreCollection.Extensions;
 using Neutronium.Core.Navigation.Routing;
 
-namespace DriverExplorer.Application.Navigation {
+namespace DriveExplorer.Application.Navigation {
     public class ConventionRouter : IConventionRouter {
         private readonly IRouterBuilder _RouterBuilder;
         private readonly string _Format;

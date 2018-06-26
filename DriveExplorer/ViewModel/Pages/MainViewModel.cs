@@ -1,6 +1,14 @@
-﻿namespace DriverExplorer.ViewModel.Pages {
+﻿using DriveExplorer.Model;
+
+namespace DriveExplorer.ViewModel.Pages {
     public class MainViewModel : Vm.Tools.ViewModel {
-        public MainViewModel() {
+        private readonly IDriverExplorer _DriverExplorer;
+
+        public string[] Drives { get; }
+
+        public MainViewModel(IDriverExplorer driverExplorer) {
+            _DriverExplorer = driverExplorer;
+            Drives = driverExplorer.AllDrives;
         }
     }
 }

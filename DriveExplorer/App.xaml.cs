@@ -6,7 +6,7 @@ using Neutronium.WebBrowserEngine.ChromiumFx;
 using Neutronium.WPF;
 using Chromium.Event;
 
-namespace DriverExplorer {
+namespace DriveExplorer {
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace DriverExplorer.Application.Navigation {
+namespace DriveExplorer.Application.Navigation {
     public interface INavigator {
         Task Navigate(object viewModel, string routeName = null);
 

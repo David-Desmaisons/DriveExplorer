@@ -1,12 +1,12 @@
 ﻿using System.Windows;
 using Microsoft.Practices.ServiceLocation;
-using DriverExplorer.Application.LifeCycleHook;
-using DriverExplorer.Application.Navigation;
-using DriverExplorer.Application.WindowServices;
-using DriverExplorer.ViewModel;
+using DriveExplorer.Application.LifeCycleHook;
+using DriveExplorer.Application.Navigation;
+using DriveExplorer.Application.WindowServices;
+using DriveExplorer.ViewModel;
 using Neutronium.WPF.ViewModel;
 
-namespace DriverExplorer {
+namespace DriveExplorer {
     public class ApplicationViewModelBuilder {
         public ApplicationViewModel ApplicationViewModel { get; }
         private readonly LifeCycleEventsRegistror _LifeCycleEventsRegistror;

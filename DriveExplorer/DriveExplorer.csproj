@@ -187,11 +187,7 @@
     <Compile Include="ViewModel\Modal\MessageModalViewModel.cs" />
     <Compile Include="ViewModel\Pages\AboutModel.cs" />
     <Compile Include="ViewModel\Pages\MainViewModel.cs" />
-    <Compile Include="View\src\message.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>message.tt</DependentUpon>
-    </Compile>
+    <Compile Include="View\src\message.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -259,6 +255,11 @@
     <None Include="View\src\components\sideMenu.vue" />
     <None Include="View\src\components\textButton.vue" />
     <None Include="View\src\components\topMenu.vue" />
+    <None Include="View\src\message.json">
+      <DependentUpon>message.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </None>
     <None Include="View\src\pages\about.vue" />
     <None Include="View\src\pages\main.vue" />
     <None Include="View\src\stylus\main.styl" />
@@ -300,7 +301,7 @@
     <Content Include="View\src\main.js" />
     <Content Include="View\src\message.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>message.cs</LastGenOutput>
+      <LastGenOutput>message.json</LastGenOutput>
     </Content>
     <Content Include="View\src\route.js" />
     <Content Include="View\src\routeDefinitions.js" />
@@ -316,9 +317,7 @@
       <Name>DriveExplorer.Model</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModel\NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

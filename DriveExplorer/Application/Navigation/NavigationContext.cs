@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DriverExplorer.Application.Navigation {
+namespace DriveExplorer.Application.Navigation {
     public class NavigationContext {
         public string ResolutionKey { get; set; }
         public string RouteName { get; set; }

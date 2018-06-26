@@ -1,4 +1,4 @@
-﻿namespace DriverExplorer.Model
+﻿namespace DriveExplorer.Model
  {
     public struct ByteSize
     {

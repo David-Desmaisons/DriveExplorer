@@ -1,7 +1,7 @@
-﻿<chromiumFxInfra:ChromiumFxWebBrowserApp x:Class="DriverExplorer.App"
+﻿<chromiumFxInfra:ChromiumFxWebBrowserApp x:Class="DriveExplorer.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:DriverExplorer"
+             xmlns:local="clr-namespace:DriveExplorer"
              xmlns:chromiumFxInfra="clr-namespace:Neutronium.WebBrowserEngine.ChromiumFx;assembly=Neutronium.WebBrowserEngine.ChromiumFx"
              xmlns:wpf="clr-namespace:Neutronium.WPF;assembly=Neutronium.WPF"
              StartupUri="MainWindow.xaml">

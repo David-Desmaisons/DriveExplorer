@@ -61,29 +61,11 @@ namespace DriveExplorer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Complete Neutronium Vue Demo.
+        ///   Looks up a localized string similar to Explore your drive and find how your disc spca is used.
         /// </summary>
-        internal static string About1 {
+        internal static string About {
             get {
-                return ResourceManager.GetString("About1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Including Ioc, navigation (vue-router) internalization (vue-i18n) and chromeless window.
-        /// </summary>
-        internal static string About2 {
-            get {
-                return ResourceManager.GetString("About2", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Made with vuetify framework.
-        /// </summary>
-        internal static string About3 {
-            get {
-                return ResourceManager.GetString("About3", resourceCulture);
+                return ResourceManager.GetString("About", resourceCulture);
             }
         }
         
@@ -178,7 +160,7 @@ namespace DriveExplorer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Neutronium Vue SPA Template including IoC, routing and internalization.
+        ///   Looks up a localized string similar to DriveExplorer.
         /// </summary>
         internal static string ProjectDescription {
             get {

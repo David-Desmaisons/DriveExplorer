@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DriverExplorer.Application.Navigation {
+namespace DriveExplorer.Application.Navigation {
     public interface IRouterBuilder {
         /// <summary>
         /// Register a file relative path to HTML file corresponding to a viewmodel type 

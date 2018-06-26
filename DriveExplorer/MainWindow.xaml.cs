@@ -1,7 +1,7 @@
 ﻿using System;
-using DriverExplorer.ViewModel;
+using DriveExplorer.ViewModel;
 
-namespace DriverExplorer {
+namespace DriveExplorer {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>

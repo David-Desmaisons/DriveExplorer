@@ -5,7 +5,7 @@ using Microsoft.Practices.ServiceLocation;
 using Neutronium.MVVMComponents;
 using Neutronium.MVVMComponents.Relay;
 
-namespace DriverExplorer.Application.Navigation {
+namespace DriveExplorer.Application.Navigation {
     public class NavigationViewModel : Vm.Tools.ViewModel, INavigator {
         public IResultCommand<string, BeforeRouterResult> BeforeResolveCommand { get; }
         public ISimpleCommand<string> AfterResolveCommand { get; }

@@ -1,6 +1,6 @@
 ﻿using DriveExplorer;
 
-namespace DriverExplorer.Application.WindowServices 
+namespace DriveExplorer.Application.WindowServices 
 {
     public class MessageInformation {
         public string Message { get; }

@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Practices.ServiceLocation;
 
-namespace DriverExplorer {
+namespace DriveExplorer {
     public interface IDependencyInjectionConfiguration {
         Lazy<IServiceLocator> GetServiceLocator();
 

@@ -1,4 +1,4 @@
-﻿namespace DriverExplorer.Application.WindowServices {
+﻿namespace DriveExplorer.Application.WindowServices {
     public enum NotificationType {
         Error,
         Warning,

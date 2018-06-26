@@ -1,5 +1,5 @@
 ﻿
-namespace DriverExplorer.Model 
+namespace DriveExplorer.Model 
  {
     public class FileDescriptor
     {

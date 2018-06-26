@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace DriverExplorer.Application.WindowServices {
+namespace DriveExplorer.Application.WindowServices {
     public interface IMessageBox {
         Task<bool> ShowMessage(ConfirmationMessage confirmationMessage);
 

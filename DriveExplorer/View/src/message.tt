@@ -1,6 +1,6 @@
 ﻿<#@ template debug="false" hostspecific="true" language="C#" #>
 <#@ assembly name="System.Core" #>
-<#@ assembly name="$(SolutionDir)\DriverExplorer\bin\Debug\Neutronium SPA.exe" #>
+<#@ assembly name="$(SolutionDir)\DriveExplorer\bin\Debug\DriveExplorer.exe" #>
 <#@ import namespace="System.Linq" #>
 <#@ import namespace="System.Globalization" #>
 <#@ import namespace="System.Resources" #>
@@ -9,6 +9,7 @@
 <#@ import namespace="System.IO" #>
 <#@ import namespace="System.Collections.Generic" #>
 <#@ import namespace="DriverExplorer" #>
+<#@ import namespace="DriveExplorer" #>
 <#@ output extension=".json" #>
 <# 
 	Langages = new [] { "en-US" };
@@ -57,7 +58,7 @@ private void DisplayDictionary(IDictionary<string,string> dictionary){
 
 private IDictionary<string,string> GetDictionary(string resourceName, string langage){
 	var asm = typeof(App).Assembly;
-	var resourceManager = new ResourceManager("DriverExplorer." + resourceName, asm);
+	var resourceManager = new ResourceManager("DriveExplorer." + resourceName, asm);
 	var rs = resourceManager.GetResourceSet(new CultureInfo(langage), true, true);
 	return rs.Cast<DictionaryEntry>().OrderBy(entry =>entry.Key).ToDictionary(dicEntry => (string)dicEntry.Key, dicEntry => (string)dicEntry.Value);            
 }

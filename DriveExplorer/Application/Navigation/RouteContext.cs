@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace DriverExplorer.Application.Navigation {
+namespace DriveExplorer.Application.Navigation {
     public class RouteContext {
         public object ViewModel { get; private set; }
         public string Route { get; private set; }

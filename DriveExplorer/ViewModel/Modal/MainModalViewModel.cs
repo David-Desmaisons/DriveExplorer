@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using Neutronium.MVVMComponents;
 using Neutronium.MVVMComponents.Relay;
-using DriverExplorer.Application.WindowServices;
+using DriveExplorer.Application.WindowServices;
 
-namespace DriverExplorer.ViewModel.Modal {
+namespace DriveExplorer.ViewModel.Modal {
     public class MainModalViewModel : MessageModalViewModel {
         public string CancelMessage { get; }
 

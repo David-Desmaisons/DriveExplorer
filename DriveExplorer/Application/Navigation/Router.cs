@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using MoreCollection.Extensions;
 
-namespace DriverExplorer.Application.Navigation {
+namespace DriveExplorer.Application.Navigation {
     internal class Router : IRouterBuilder, IRouterSolver {
         private readonly Dictionary<string, Type> _RouteToType = new Dictionary<string, Type>();
         private readonly Dictionary<Type, string> _TypeToRoute = new Dictionary<Type, string>();

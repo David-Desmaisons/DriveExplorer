@@ -1,11 +1,11 @@
 ﻿using System.ComponentModel;
 using DriveExplorer;
-using DriverExplorer.Application.LifeCycleHook;
-using DriverExplorer.Application.Navigation;
-using DriverExplorer.Application.WindowServices;
+using DriveExplorer.Application.LifeCycleHook;
+using DriveExplorer.Application.Navigation;
+using DriveExplorer.Application.WindowServices;
 using Vm.Tools.Application;
 
-namespace DriverExplorer {
+namespace DriveExplorer {
     public class ApplicationLifeCycle : IApplicationLifeCycle {
         private readonly IMessageBox _MessageBox;
         private readonly IApplication _Application;

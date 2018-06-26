@@ -1,4 +1,4 @@
-﻿namespace DriverExplorer.Application.Navigation {
+﻿namespace DriveExplorer.Application.Navigation {
     public struct BeforeRouterResult {
         private BeforeRouterResult(string redirect, object viewModel) {
             Redirect = redirect;

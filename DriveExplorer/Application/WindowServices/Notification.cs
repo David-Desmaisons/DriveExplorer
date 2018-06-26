@@ -1,4 +1,4 @@
-﻿namespace DriverExplorer.Application.WindowServices {
+﻿namespace DriveExplorer.Application.WindowServices {
     public class Notification {
         public string Type { get; }
         public string Title { get; }

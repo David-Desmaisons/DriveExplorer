@@ -2,13 +2,14 @@
 using CommonServiceLocator.NinjectAdapter.Unofficial;
 using Microsoft.Practices.ServiceLocation;
 using Neutronium.Core.WebBrowserEngine.Window;
-using DriverExplorer.Application.LifeCycleHook;
-using DriverExplorer.ViewModel.Pages;
+using DriveExplorer.Application.LifeCycleHook;
+using DriveExplorer.ViewModel.Pages;
 using Neutronium.WPF.Internal;
 using Ninject;
 using Vm.Tools.Application;
+using DriveExplorer.Model;
 
-namespace DriverExplorer {
+namespace DriveExplorer {
     public class DependencyInjectionConfiguration : IDependencyInjectionConfiguration {
         private readonly StandardKernel _Kernel;
         private readonly Lazy<IServiceLocator> _ServiceLocator;
@@ -30,6 +31,7 @@ namespace DriverExplorer {
             kernel.Bind<IApplication>().ToConstant(application);
             kernel.Bind<IDispatcher>().ToConstant(new WPFUIDispatcher(window.Dispatcher));
             kernel.Bind<IApplicationLifeCycle>().To<ApplicationLifeCycle>();
+            kernel.Bind<IDriverExplorer>().To<DriverExplorer>();
             kernel.Bind<MainViewModel>().ToSelf().InSingletonScope();
         }
     }

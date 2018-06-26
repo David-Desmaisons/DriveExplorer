@@ -13,9 +13,7 @@
                 </div>
                 </v-card-title>
                 <v-card-actions>
-                    <v-btn flat color="orange" href="https://vuejs.org" target="_blank">Vue.js</v-btn>
-                    <v-btn flat color="orange" href="https://vuetifyjs.com/" target="_blank">Vuetify</v-btn>
-                    <v-btn flat color="orange" href="https://github.com/NeutroniumCore/Neutronium/" target="_blank">Neutronium</v-btn>
+                    <v-btn flat color="orange" href="https://github.com/David-Desmaisons/DriveExplorer" target="_blank">Neutronium</v-btn>
                 </v-card-actions>
             </v-card>
             </v-flex>

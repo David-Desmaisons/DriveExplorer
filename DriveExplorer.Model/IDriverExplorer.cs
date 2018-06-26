@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading;
 
-namespace DriverExplorer.Model 
+namespace DriveExplorer.Model 
 {
     public interface IDriverExplorer 
     {
-        List<string> AllDrives { get; }
+        string[] AllDrives { get; }
 
         DriveDescriptor GetDriveDescriptor(string name, IProgress<string> progress, CancellationToken cancellationToken);
     }

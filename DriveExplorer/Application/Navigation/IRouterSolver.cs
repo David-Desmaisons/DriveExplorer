@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DriverExplorer.Application.Navigation {
+namespace DriveExplorer.Application.Navigation {
     public interface IRouterSolver {
         string SolveRoute(object viewModel);
 

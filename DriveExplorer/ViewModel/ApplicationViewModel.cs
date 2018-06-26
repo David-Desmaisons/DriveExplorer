@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
-using DriverExplorer.Application.Navigation;
-using DriverExplorer.Application.WindowServices;
-using DriverExplorer.ViewModel.Modal;
+using DriveExplorer.Application.Navigation;
+using DriveExplorer.Application.WindowServices;
+using DriveExplorer.ViewModel.Modal;
 using Neutronium.WPF.ViewModel;
 
-namespace DriverExplorer.ViewModel {
+namespace DriveExplorer.ViewModel {
     public class ApplicationViewModel : Vm.Tools.ViewModel, IMessageBox, INotificationSender {
         public ApplicationInformation ApplicationInformation { get; } = new ApplicationInformation();
         public IWindowViewModel Window { get; }

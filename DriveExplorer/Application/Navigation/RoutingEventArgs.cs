@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace DriverExplorer.Application.Navigation {
+namespace DriveExplorer.Application.Navigation {
     public class RoutingEventArgs : CancelEventArgs {
         public RoutingEventArgs(RouteContext toContext, string fromRoute, object fromVm) {
             To = new RouteInfo(toContext);

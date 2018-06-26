@@ -1,6 +1,6 @@
 using System;
 
-namespace DriverExplorer.Application.Navigation {
+namespace DriveExplorer.Application.Navigation {
     public class RoutedEventArgs : EventArgs {
         public RoutedEventArgs(RouteContext routeContext) : this(new RouteInfo(routeContext)) {
         }

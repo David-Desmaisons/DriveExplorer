@@ -1,7 +1,7 @@
 ﻿using Neutronium.Core.Navigation.Routing;
-using DriverExplorer.Application.Navigation;
+using DriveExplorer.Application.Navigation;
 
-namespace DriverExplorer {
+namespace DriveExplorer {
     public class RoutingConfiguration {
         public static IRouterSolver Register() {
             var router = new Router();
@@ -12,7 +12,7 @@ namespace DriverExplorer {
         private static void BuildRoutes(IRouterBuilder routeBuilder) {
             var convention = routeBuilder.GetTemplateConvention("{vm}");
             typeof(RoutingConfiguration).GetTypesFromSameAssembly()
-                .InNamespace("DriverExplorer.ViewModel.Pages")
+                .InNamespace("DriveExplorer.ViewModel.Pages")
                 .Register(convention);
         }
     }

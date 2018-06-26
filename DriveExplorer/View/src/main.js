@@ -8,7 +8,8 @@ const vm = updateVM(rawVm);
 
 function updateVM(raw) {
     const vm = createVM(raw);
-    return Object.assign(vm, {ViewModel: {Router: {BeforeResolveCommand: null} } });
+    Object.assign(vm.ViewModel, { Router: { BeforeResolveCommand: null } });
+    return vm;
 }
 
 install(Vue)

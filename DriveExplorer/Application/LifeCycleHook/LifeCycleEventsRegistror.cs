@@ -1,7 +1,7 @@
-﻿using DriverExplorer.Application.Navigation;
+﻿using DriveExplorer.Application.Navigation;
 using Vm.Tools.Application;
 
-namespace DriverExplorer.Application.LifeCycleHook {
+namespace DriveExplorer.Application.LifeCycleHook {
     internal class LifeCycleEventsRegistror {
         private readonly IApplicationLifeCycle _ApplicationLifeCycle;
         private readonly IApplication _Application;

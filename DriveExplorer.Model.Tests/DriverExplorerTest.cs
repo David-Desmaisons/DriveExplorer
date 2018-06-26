@@ -3,7 +3,7 @@ using FluentAssertions;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace DriverExplorer.Model.Tests
+namespace DriveExplorer.Model.Tests
 {
     public class DriverExplorerTest 
     {
