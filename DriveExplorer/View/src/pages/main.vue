@@ -4,9 +4,17 @@
         <v-container fluid class="main-container">
 
         <v-layout>
-          <v-flex xs12 sm6 offset-sm3>
-            <v-card>
-            </v-card>
+          <v-flex>
+
+          <v-flex xs6>
+              <v-select
+                :label="$t('Resource.SelectDrive')"
+                :items="viewModel.Drives"
+                v-model="viewModel.Drive"
+                dark
+              ></v-select>
+          </v-flex>
+
           </v-flex>
         </v-layout>
 

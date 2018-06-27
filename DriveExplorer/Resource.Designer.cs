@@ -178,6 +178,15 @@ namespace DriveExplorer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Select a drive.
+        /// </summary>
+        internal static string SelectDrive {
+            get {
+                return ResourceManager.GetString("SelectDrive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to To Do.
         /// </summary>
         internal static string ToDo {

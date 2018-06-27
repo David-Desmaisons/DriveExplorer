@@ -1,7 +1,7 @@
 ﻿{
  "en-US":{
         "Resource":{
-            "About":"Explore your drive and find how your disc spca is used",
+            "About":"Explore your drive and find how your disc space is used",
             "Cancel":"Cancel",
             "Completed":"Completed",
             "ConfirmationNeeded":"Confirmation needed",
@@ -14,6 +14,7 @@
             "Ok":"Ok",
             "ProjectDescription":"DriveExplorer",
             "Restart":"Restart",
+            "SelectDrive":"Select a drive",
             "ToDo":"To Do",
             "ToDoList":"ToDo List",
             "WhatNeedsToBeDone":"What needs to be done?"

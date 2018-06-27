@@ -24,6 +24,8 @@ import {
     VCard,
     VDialog,
     VTextField,
+    VSelect,
+    VSubHeader,
     transitions
 } from 'vuetify'
 
@@ -44,6 +46,8 @@ function install(Vue) {
             VCard,
             VDialog,
             VTextField,
+            VSelect,
+            VSubHeader,
             transitions
         }
     })
