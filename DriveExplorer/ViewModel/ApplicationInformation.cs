@@ -2,7 +2,7 @@
 
 namespace DriveExplorer.ViewModel {
     public class ApplicationInformation {
-        public string Name => "Neutronium Vuetify SPA";
+        public string Name => "Drive Explorer";
 
         public string Version => Assembly.GetExecutingAssembly().GetName().Version.ToString();
 

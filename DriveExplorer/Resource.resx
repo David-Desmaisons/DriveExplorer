@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="About" xml:space="preserve">
-    <value>Explore your drive and find how your disc spca is used</value>
+    <value>Explore your drive and find how your disc space is used</value>
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>

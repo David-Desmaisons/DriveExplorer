@@ -13,7 +13,7 @@
                 </div>
                 </v-card-title>
                 <v-card-actions>
-                    <v-btn flat color="orange" href="https://github.com/David-Desmaisons/DriveExplorer" target="_blank">Neutronium</v-btn>
+                    <v-btn flat color="orange" href="https://github.com/David-Desmaisons/DriveExplorer" target="_blank">Github</v-btn>
                 </v-card-actions>
             </v-card>
             </v-flex>

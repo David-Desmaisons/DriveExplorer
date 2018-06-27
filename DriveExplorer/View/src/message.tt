@@ -8,7 +8,6 @@
 <#@ import namespace="System.Collections" #>
 <#@ import namespace="System.IO" #>
 <#@ import namespace="System.Collections.Generic" #>
-<#@ import namespace="DriverExplorer" #>
 <#@ import namespace="DriveExplorer" #>
 <#@ output extension=".json" #>
 <# 

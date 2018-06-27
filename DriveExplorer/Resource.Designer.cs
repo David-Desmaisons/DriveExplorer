@@ -61,7 +61,7 @@ namespace DriveExplorer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Explore your drive and find how your disc spca is used.
+        ///   Looks up a localized string similar to Explore your drive and find how your disc space is used.
         /// </summary>
         internal static string About {
             get {
