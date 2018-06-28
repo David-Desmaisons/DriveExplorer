@@ -182,6 +182,9 @@
     </Compile>
     <Compile Include="Application\WindowServices\Notification.cs" />
     <Compile Include="Application\WindowServices\NotificationType.cs" />
+    <Compile Include="ViewModel\Core\DiscEntityType.cs" />
+    <Compile Include="ViewModel\Core\DiscEntityViewModel.cs" />
+    <Compile Include="ViewModel\Core\SizeViewModel.cs" />
     <Compile Include="ViewModel\Modal\MainModalViewModel.cs" />
     <Compile Include="Application\WindowServices\MessageInformation.cs" />
     <Compile Include="ViewModel\Modal\MessageModalViewModel.cs" />

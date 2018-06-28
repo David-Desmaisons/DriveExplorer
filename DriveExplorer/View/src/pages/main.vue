@@ -3,8 +3,7 @@
       <v-content>
         <v-container fluid class="main-container">
 
-        <v-layout>
-          <v-flex>
+        <v-layout row wrap>
 
           <v-flex xs6>
               <v-select
@@ -15,7 +14,10 @@
               ></v-select>
           </v-flex>
 
+          <v-flex xs6> 
+            <text-button :text="$t('Resource.Process')" color="green darken-1" :command="viewModel.Load"></text-button>
           </v-flex>
+
         </v-layout>
 
         </v-container>

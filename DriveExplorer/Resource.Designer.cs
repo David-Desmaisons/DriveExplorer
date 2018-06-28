@@ -160,6 +160,15 @@ namespace DriveExplorer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Process.
+        /// </summary>
+        internal static string Process {
+            get {
+                return ResourceManager.GetString("Process", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to DriveExplorer.
         /// </summary>
         internal static string ProjectDescription {

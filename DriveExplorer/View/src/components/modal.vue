@@ -15,7 +15,6 @@
 <script>
 import textButton from '../components/textButton'
 
-
 const props={
     value:{
         type:Boolean,
