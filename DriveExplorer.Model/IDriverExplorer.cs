@@ -5,7 +5,7 @@ namespace DriveExplorer.Model
 {
     public interface IDriverExplorer 
     {
-        string[] AllDrives { get; }
+        DriveBasicDescription[] AllDrives { get; }
 
         DriveDescriptor GetDriveDescriptor(string name, IProgress<string> progress, CancellationToken cancellationToken);
     }

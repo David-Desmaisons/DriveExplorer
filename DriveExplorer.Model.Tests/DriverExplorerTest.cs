@@ -33,7 +33,7 @@ namespace DriveExplorer.Model.Tests
         [Fact]
         public void GetDriveDescriptor_returns_not_null_when_drives_found() 
         {
-            var res = _DriverExplorer.GetDriveDescriptor(_DriverExplorer.AllDrives[0], null, CancellationToken.None);
+            var res = _DriverExplorer.GetDriveDescriptor(_DriverExplorer.AllDrives[0].Name, null, CancellationToken.None);
             res.Should().NotBeNull();
         }
 

@@ -1,7 +1,9 @@
 ﻿using System.Reflection;
 
-namespace DriveExplorer.ViewModel {
-    public class ApplicationInformation {
+namespace DriveExplorer.ViewModel
+{
+    public class ApplicationInformation
+    {
         public string Name => "Drive Explorer";
 
         public string Version => Assembly.GetExecutingAssembly().GetName().Version.ToString();

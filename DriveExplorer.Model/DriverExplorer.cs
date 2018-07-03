@@ -7,12 +7,26 @@ namespace DriveExplorer.Model
 {
     public class DriverExplorer : IDriverExplorer 
     {
-        public string[] AllDrives { get; }
+        public DriveBasicDescription[] AllDrives { get; }
 
         public DriverExplorer() 
         {
             var drives = DriveInfo.GetDrives();
-            AllDrives = drives.Select(d => d.Name).ToArray();
+            AllDrives = drives.Select(GetDriveBasicDescription).ToArray();
+        }
+
+        private static DriveBasicDescription GetDriveBasicDescription(DriveInfo driveInfo)
+        {
+            var isReady = driveInfo.IsReady;
+            var volumeLabel = default(string);
+            try
+            {
+                volumeLabel = isReady? driveInfo.VolumeLabel: null;
+            }
+            catch
+            {
+            }
+            return new DriveBasicDescription(driveInfo.Name, driveInfo.DriveType, isReady, volumeLabel);
         }
 
         public DriveDescriptor GetDriveDescriptor(string name, IProgress<string> progress, CancellationToken cancellationToken) 

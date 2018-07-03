@@ -1,7 +1,7 @@
-﻿using DriveExplorer;
-
-namespace DriveExplorer.ViewModel.Pages {
-    public class AboutViewModel {
+﻿namespace DriveExplorer.ViewModel.Pages
+{
+    public class AboutViewModel
+    {
         public ApplicationInformation Information { get; } = new ApplicationInformation();
 
         public string[] Descriptions { get; } =

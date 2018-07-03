@@ -26,7 +26,8 @@ import {
     VTextField,
     VSelect,
     VSubHeader,
-    transitions
+    transitions,
+    VProgressCircular
 } from 'vuetify'
 
 function install(Vue) {
@@ -48,7 +49,8 @@ function install(Vue) {
             VTextField,
             VSelect,
             VSubHeader,
-            transitions
+            transitions,
+            VProgressCircular
         }
     })
 

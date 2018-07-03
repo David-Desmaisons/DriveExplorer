@@ -135,6 +135,27 @@
   <data name="DoYouWantToRestartApplication" xml:space="preserve">
     <value>Do you want to restart application?</value>
   </data>
+  <data name="Enum_DriveType_CDRom" xml:space="preserve">
+    <value>CDRom</value>
+  </data>
+  <data name="Enum_DriveType_Fixed" xml:space="preserve">
+    <value>Fixed Disk</value>
+  </data>
+  <data name="Enum_DriveType_Network" xml:space="preserve">
+    <value>Network</value>
+  </data>
+  <data name="Enum_DriveType_NoRootDirectory" xml:space="preserve">
+    <value>No Root Directory</value>
+  </data>
+  <data name="Enum_DriveType_Ram" xml:space="preserve">
+    <value>RAM disk</value>
+  </data>
+  <data name="Enum_DriveType_Removable" xml:space="preserve">
+    <value>Removable Device</value>
+  </data>
+  <data name="Enum_DriveType_Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
   <data name="GoToAboutSection" xml:space="preserve">
     <value>Go To About Section</value>
   </data>

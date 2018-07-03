@@ -115,6 +115,69 @@ namespace DriveExplorer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to CDRom.
+        /// </summary>
+        internal static string Enum_DriveType_CDRom {
+            get {
+                return ResourceManager.GetString("Enum_DriveType_CDRom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fixed Disk.
+        /// </summary>
+        internal static string Enum_DriveType_Fixed {
+            get {
+                return ResourceManager.GetString("Enum_DriveType_Fixed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Network.
+        /// </summary>
+        internal static string Enum_DriveType_Network {
+            get {
+                return ResourceManager.GetString("Enum_DriveType_Network", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No Root Directory.
+        /// </summary>
+        internal static string Enum_DriveType_NoRootDirectory {
+            get {
+                return ResourceManager.GetString("Enum_DriveType_NoRootDirectory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RAM disk.
+        /// </summary>
+        internal static string Enum_DriveType_Ram {
+            get {
+                return ResourceManager.GetString("Enum_DriveType_Ram", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Removable Device.
+        /// </summary>
+        internal static string Enum_DriveType_Removable {
+            get {
+                return ResourceManager.GetString("Enum_DriveType_Removable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unknown.
+        /// </summary>
+        internal static string Enum_DriveType_Unknown {
+            get {
+                return ResourceManager.GetString("Enum_DriveType_Unknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Go To About Section.
         /// </summary>
         internal static string GoToAboutSection {

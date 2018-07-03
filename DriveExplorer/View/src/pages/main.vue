@@ -9,13 +9,14 @@
               <v-select
                 :label="$t('Resource.SelectDrive')"
                 :items="viewModel.Drives"
+                item-text="DisplayName"
                 v-model="viewModel.Drive"
                 dark
               ></v-select>
           </v-flex>
 
           <v-flex xs6> 
-            <text-button :text="$t('Resource.Process')" color="green darken-1" :command="viewModel.Load"></text-button>
+            <text-button :text="$t('Resource.Process')" color="green darken-1" :command="viewModel.FileAnalyser.Run" :loading="viewModel.FileAnalyser.Computing"></text-button>
           </v-flex>
 
         </v-layout>

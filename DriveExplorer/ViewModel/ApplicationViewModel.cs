@@ -4,8 +4,10 @@ using DriveExplorer.Application.WindowServices;
 using DriveExplorer.ViewModel.Modal;
 using Neutronium.WPF.ViewModel;
 
-namespace DriveExplorer.ViewModel {
-    public class ApplicationViewModel : Vm.Tools.ViewModel, IMessageBox, INotificationSender {
+namespace DriveExplorer.ViewModel
+{
+    public class ApplicationViewModel : Vm.Tools.ViewModel, IMessageBox, INotificationSender
+    {
         public ApplicationInformation ApplicationInformation { get; } = new ApplicationInformation();
         public IWindowViewModel Window { get; }
         public NavigationViewModel Router { get; }
@@ -26,23 +28,27 @@ namespace DriveExplorer.ViewModel {
             set { Set(ref _Notification, value); }
         }
 
-        public ApplicationViewModel(IWindowViewModel window, NavigationViewModel router) {
+        public ApplicationViewModel(IWindowViewModel window, NavigationViewModel router)
+        {
             Window = window;
             Router = router;
         }
 
-        public Task<bool> ShowMessage(ConfirmationMessage confirmationMessage) {
+        public Task<bool> ShowMessage(ConfirmationMessage confirmationMessage)
+        {
             var modal = new MainModalViewModel(confirmationMessage);
             Modal = modal;
             return modal.CompletionTask;
         }
 
-        public void ShowInformation(MessageInformation messageInformation) {
+        public void ShowInformation(MessageInformation messageInformation)
+        {
             var modal = new MessageModalViewModel(messageInformation);
             Modal = modal;
         }
 
-        public void Send(Notification notification) {
+        public void Send(Notification notification)
+        {
             Notification = notification;
         }
     }

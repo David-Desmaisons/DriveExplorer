@@ -149,8 +149,7 @@
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="Vm.Tools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Vm.Tools.2.1.0\lib\Vm.Tools.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\packages\Vm.Tools.2.1.1\lib\Vm.Tools.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
@@ -175,6 +174,7 @@
     <Compile Include="Application\WindowServices\IMessageBox.cs" />
     <Compile Include="Application\WindowServices\ConfirmationMessage.cs" />
     <Compile Include="Application\LifeCycleHook\LifeCycleEventsRegistror.cs" />
+    <Compile Include="Localization\Humanize.cs" />
     <Compile Include="Resource.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -184,6 +184,7 @@
     <Compile Include="Application\WindowServices\NotificationType.cs" />
     <Compile Include="ViewModel\Core\DiscEntityType.cs" />
     <Compile Include="ViewModel\Core\DiscEntityViewModel.cs" />
+    <Compile Include="ViewModel\Core\DriveBasicDescription.cs" />
     <Compile Include="ViewModel\Core\SizeViewModel.cs" />
     <Compile Include="ViewModel\Modal\MainModalViewModel.cs" />
     <Compile Include="Application\WindowServices\MessageInformation.cs" />
