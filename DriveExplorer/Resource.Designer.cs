@@ -178,6 +178,15 @@ namespace DriveExplorer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Exception raised: {0}.
+        /// </summary>
+        internal static string ExceptionRaised {
+            get {
+                return ResourceManager.GetString("ExceptionRaised", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Go To About Section.
         /// </summary>
         internal static string GoToAboutSection {
@@ -219,6 +228,15 @@ namespace DriveExplorer {
         internal static string Ok {
             get {
                 return ResourceManager.GetString("Ok", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Problem analysing disk:  {0}.
+        /// </summary>
+        internal static string ProblemDuringDiskAnalyse {
+            get {
+                return ResourceManager.GetString("ProblemDuringDiskAnalyse", resourceCulture);
             }
         }
         

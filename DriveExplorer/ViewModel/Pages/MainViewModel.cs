@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Linq;
 using System.Threading;
+using DriveExplorer.Application.WindowServices;
 using DriveExplorer.Model;
 using DriveExplorer.ViewModel.Core;
 using Neutronium.MVVMComponents;
@@ -32,10 +33,12 @@ namespace DriveExplorer.ViewModel.Pages
         public TaskCommand<DiscEntityViewModel, string> FileAnalyser { get; }
 
         private readonly IDriverExplorer _DriverExplorer;
+        private readonly INotificationSender _NotificationSender;
 
-        public MainViewModel(IDriverExplorer driverExplorer)
+        public MainViewModel(IDriverExplorer driverExplorer, INotificationSender notificationSender)
         {
             _DriverExplorer = driverExplorer;
+            _NotificationSender = notificationSender;
             _Drive = null;
             Drives = driverExplorer.AllDrives.Select(m => new DriveBasicDescriptionViewModel(m)).ToArray();
             OpenDirectory = new RelaySimpleCommand<DiscEntityViewModel>(Open);
@@ -49,7 +52,12 @@ namespace DriveExplorer.ViewModel.Pages
             if (result.Success)
             {
                 Root = result.Result;
+                return;
             }
+
+            var notification =  Notification.Error(string.Format(Resource.ProblemDuringDiskAnalyse, _Drive.DisplayName),
+                                string.Format(Resource.ExceptionRaised, result.Exception.Message));
+            _NotificationSender.Send(notification);
         }
 
         private void MainViewModel_PropertyChanged(object sender, PropertyChangedEventArgs e)
