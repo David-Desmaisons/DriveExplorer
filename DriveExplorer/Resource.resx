@@ -156,9 +156,6 @@
   <data name="Enum_DriveType_Unknown" xml:space="preserve">
     <value>Unknown</value>
   </data>
-  <data name="ExceptionRaised" xml:space="preserve">
-    <value>Exception raised: {0}</value>
-  </data>
   <data name="GoToAboutSection" xml:space="preserve">
     <value>Go To About Section</value>
   </data>

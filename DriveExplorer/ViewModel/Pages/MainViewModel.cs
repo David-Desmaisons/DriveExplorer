@@ -56,7 +56,7 @@ namespace DriveExplorer.ViewModel.Pages
             }
 
             var notification =  Notification.Error(string.Format(Resource.ProblemDuringDiskAnalyse, _Drive.DisplayName),
-                                string.Format(Resource.ExceptionRaised, result.Exception.Message));
+                                    result.Exception.Message);
             _NotificationSender.Send(notification);
         }
 
