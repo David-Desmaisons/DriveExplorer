@@ -19,6 +19,10 @@
             <text-button :text="$t('Resource.Process')" color="green darken-1" :command="viewModel.FileAnalyser.Run" :loading="viewModel.FileAnalyser.Computing"></text-button>
           </v-flex>
 
+          <v-flex xs6> 
+            <text-button :text="$t('Resource.Process')" color="green darken-1" :command="viewModel.FileAnalyser.Run" :loading="viewModel.FileAnalyser.Computing"></text-button>
+          </v-flex>
+          
         </v-layout>
 
         </v-container>

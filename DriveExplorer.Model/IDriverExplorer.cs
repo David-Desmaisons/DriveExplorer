@@ -7,6 +7,6 @@ namespace DriveExplorer.Model
     {
         DriveBasicDescription[] AllDrives { get; }
 
-        DriveDescriptor GetDriveDescriptor(string name, IProgress<string> progress, CancellationToken cancellationToken);
+        DriveDescriptor GetDriveDescriptor(string name, IProgress<PorcentageProgress> progress, CancellationToken cancellationToken);
     }
 }

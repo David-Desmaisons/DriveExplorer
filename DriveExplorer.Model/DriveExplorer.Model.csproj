@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ByteSize.cs" />
     <Compile Include="DirectoryDescriptor.cs" />
+    <Compile Include="PorcentageProgress.cs" />
     <Compile Include="DriveBasicDescription.cs" />
     <Compile Include="DriveDescriptor.cs" />
     <Compile Include="DriverExplorer.cs" />
