@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Linq;
+using System.Reactive.Linq;
 using System.Threading;
 using DriveExplorer.Application.WindowServices;
 using DriveExplorer.Model;
@@ -49,7 +50,7 @@ namespace DriveExplorer.ViewModel.Pages
             _Drive = null;
             Drives = driverExplorer.AllDrives.Select(m => new DriveBasicDescriptionViewModel(m)).ToArray();
             OpenDirectory = new RelaySimpleCommand<DiscEntityViewModel>(Open);
-            FileAnalyser = new TaskCommand<DiscEntityViewModel, PorcentageProgress>(DoAnalyse) {CanBeExecuted = false};
+            FileAnalyser = new TaskCommand<DiscEntityViewModel, PorcentageProgress>(DoAnalyse, TimeSpan.FromMilliseconds(10)) {CanBeExecuted = false};
             FileAnalyser.Results.Subscribe(OnResult);
             FileAnalyser.Progress.Subscribe(OnProgress);
             PropertyChanged += MainViewModel_PropertyChanged;
@@ -64,8 +65,7 @@ namespace DriveExplorer.ViewModel.Pages
                 return;
             }
 
-            var notification = Notification.Error(string.Format(Resource.ProblemDuringDiskAnalyse, _Drive.DisplayName),
-                result.Exception.Message);
+            var notification = Notification.Error(string.Format(Resource.ProblemDuringDiskAnalyse, _Drive.DisplayName), result.Exception.Message);
             _NotificationSender.Send(notification);
         }
 

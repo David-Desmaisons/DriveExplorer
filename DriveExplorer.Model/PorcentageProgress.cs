@@ -2,18 +2,18 @@
 {
     public class PorcentageProgress
     {
-        public int Total { get; }
-        public int Current { get; set; }
+        public int? Total { get; }
+        public int Current { get; }
 
-        public PorcentageProgress(int total)
+        public PorcentageProgress(int? total, int current)
         {
             Total = total;
-            Current = 0;
+            Current = current;
         }
 
         public override string ToString()
         {
-            return $"{Current} / {Total}";
+            return $"{Current}{(Total.HasValue? $"/ {Total}": string.Empty)}";
         }
     }
 }

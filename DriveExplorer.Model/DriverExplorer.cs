@@ -29,20 +29,46 @@ namespace DriveExplorer.Model
             return new DriveBasicDescription(driveInfo.Name, driveInfo.DriveType, isReady, volumeLabel);
         }
 
+        private class WorkContext
+        {
+            private int? Total { get; }
+            internal int Current { get; set; }
+
+            public WorkContext(int total)
+            {
+                Total = total;
+                Current = 0;
+            }
+
+            public WorkContext()
+            {
+                Total = null;
+                Current = 0;
+            }
+
+            internal PorcentageProgress GetProgress()
+            {
+                return new PorcentageProgress(Total, Current);
+            }
+        }
+
         public DriveDescriptor GetDriveDescriptor(string name, IProgress<PorcentageProgress> progress, CancellationToken cancellationToken)
         {
             var drive = DriveInfo.GetDrives().SingleOrDefault(d => d.Name == name);
             if (drive == null)
                 return null;
 
-            var root = FromPathDirectoryInfo(new DirectoryInfo(name), progress);
+            var driveInfo = new DirectoryInfo(name);
+            var current = GetFirstProgress(driveInfo);
+            progress.Report(current.GetProgress());
+            var root = FromPathDirectoryInfo(driveInfo, progress, current);
             var result = new DriveDescriptor(name, drive.TotalSize, drive.TotalFreeSpace, root);
+            progress.Report(current.GetProgress());
             return result;
         }
 
-        private static DirectoryDescriptor FromPathDirectoryInfo(DirectoryInfo directoryInfo, IProgress<PorcentageProgress> progress, PorcentageProgress current = null)
+        private static DirectoryDescriptor FromPathDirectoryInfo(DirectoryInfo directoryInfo, IProgress<PorcentageProgress> progress, WorkContext current)
         {
-            current = current ?? new PorcentageProgress(directoryInfo.GetFiles("*", SearchOption.AllDirectories).Length);
             DirectoryInfo[] directories;
             try
             {
@@ -68,9 +94,21 @@ namespace DriveExplorer.Model
                 var file = new FileDescriptor(fileInfo.Name, fileInfo.Length);
                 res.Files.Add(file);
                 current.Current++;
-                progress.Report(current);
+                progress.Report(current.GetProgress());
             }
             return res;
+        }
+
+        private static WorkContext GetFirstProgress(DirectoryInfo directoryInfo)
+        {
+            try
+            {
+                return new WorkContext(directoryInfo.GetFiles("*", SearchOption.AllDirectories).Length);
+            }
+            catch
+            {
+                return new WorkContext();
+            }
         }
     }
 }
