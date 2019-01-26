@@ -195,3 +195,4 @@ ModelManifest.xml
 /.nunit
 *.nunit
 /.vs/DriveExplorer/v15/Server/sqlite3
+/DriverExplorer.UI/View/data/main/vm-big.cjson
