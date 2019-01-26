@@ -1,0 +1,31 @@
+﻿{
+ "en-US":{
+        "Resource":{
+            "About1":"Complete Neutronium Vue Demo",
+            "About2":"Including Ioc, navigation (vue-router) internalization (vue-i18n) and chromeless window",
+            "About3":"Made with vuetify framework",
+            "Cancel":"Cancel",
+            "Completed":"Completed",
+            "ConfirmationNeeded":"Confirmation needed",
+            "DoYouWantToCloseApplication":"Do you want to close application?",
+            "DoYouWantToRestartApplication":"Do you want to restart application?",
+            "Enum_DriveType_CDRom":"CDRom",
+            "Enum_DriveType_Fixed":"Fixed Disk",
+            "Enum_DriveType_Network":"Network",
+            "Enum_DriveType_NoRootDirectory":"No Root Directory",
+            "Enum_DriveType_Ram":"RAM disk",
+            "Enum_DriveType_Removable":"Removable Device",
+            "Enum_DriveType_Unknown":"Unknown",
+            "GoToAboutSection":"Go To About Section",
+            "MadeBy":"made by",
+            "Menu_about":"About",
+            "Menu_main":"Main",
+            "Ok":"Ok",
+            "ProblemDuringDiskAnalyse":"Problem analysing disk:  {0}",
+            "Process":"Process",
+            "ProjectDescription":"DriveExplorer",
+            "Restart":"Restart",
+            "SelectDrive":"Select a drive"
+        }
+    }
+}
