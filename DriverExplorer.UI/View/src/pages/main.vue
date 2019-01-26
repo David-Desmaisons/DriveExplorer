@@ -30,8 +30,8 @@
             ></text-button>
           </v-flex>
 
-          <v-flex xs6>
-            {{viewModel.Progress}}
+          <v-flex xs6 v-if="viewModel.Progress">
+            {{viewModel.Progress}} {{$t('Resource.FilesAnalyzed')}}
           </v-flex>
         </v-layout>
 

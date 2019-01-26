@@ -171,7 +171,7 @@
   <data name="SelectDrive" xml:space="preserve">
     <value>Select a drive</value>
   </data>
-    <data name="Enum_DriveType_CDRom" xml:space="preserve">
+  <data name="Enum_DriveType_CDRom" xml:space="preserve">
     <value>CDRom</value>
   </data>
   <data name="Enum_DriveType_Fixed" xml:space="preserve">
@@ -191,5 +191,8 @@
   </data>
   <data name="Enum_DriveType_Unknown" xml:space="preserve">
     <value>Unknown</value>
+  </data>
+  <data name="FilesAnalyzed" xml:space="preserve">
+    <value>Files analyzed</value>
   </data>
 </root>

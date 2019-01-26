@@ -74,6 +74,10 @@ namespace DriveExplorer.Model
             {
                 directories = directoryInfo.GetDirectories();
             }
+            catch (DirectoryNotFoundException)
+            {
+                return new DirectoryDescriptor(directoryInfo.Name, false);
+            }
             catch (PathTooLongException)
             {
                 return new DirectoryDescriptor(directoryInfo.Name, false);

@@ -16,6 +16,7 @@
             "Enum_DriveType_Ram":"RAM disk",
             "Enum_DriveType_Removable":"Removable Device",
             "Enum_DriveType_Unknown":"Unknown",
+            "FilesAnalyzed":"Files analyzed",
             "GoToAboutSection":"Go To About Section",
             "MadeBy":"made by",
             "Menu_about":"About",

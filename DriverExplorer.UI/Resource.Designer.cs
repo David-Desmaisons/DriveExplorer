@@ -196,6 +196,15 @@ namespace DriverExplorer.UI {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Files analyzed.
+        /// </summary>
+        internal static string FilesAnalyzed {
+            get {
+                return ResourceManager.GetString("FilesAnalyzed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Go To About Section.
         /// </summary>
         internal static string GoToAboutSection {
