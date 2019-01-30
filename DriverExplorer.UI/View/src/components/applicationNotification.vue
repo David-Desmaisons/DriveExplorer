@@ -51,6 +51,6 @@ export default {
 }
 
 .application-notifications a {
-    -webkit-app-region: no-drag;
+  -webkit-app-region: no-drag;
 }
 </style>

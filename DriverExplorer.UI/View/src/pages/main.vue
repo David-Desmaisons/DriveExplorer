@@ -30,9 +30,55 @@
             ></text-button>
           </v-flex>
 
-          <v-flex xs6 v-if="viewModel.Progress">
+          <v-flex
+            xs6
+            v-if="viewModel.Progress"
+          >
             {{viewModel.Progress}} {{$t('Resource.FilesAnalyzed')}}
           </v-flex>
+
+          <div class="sunburst">
+            <sunburst
+              v-if="viewModel.Root"
+              :data="dataFiles"
+            >
+
+              <!-- Add behaviors -->
+              <template slot-scope="{ nodes, actions }">
+                <highlightOnHover
+                  :nodes="nodes"
+                  :actions="actions"
+                />
+                <zoomOnClick
+                  :nodes="nodes"
+                  :actions="actions"
+                />
+              </template>
+
+              <!-- Add information to be displayed on top the graph -->
+              <nodeInfoDisplayer
+                slot="top"
+                slot-scope="{ nodes }"
+                :current="nodes.mouseOver"
+                :root="nodes.root"
+                :showAllNumber="false"
+                description=""
+              />
+
+              <!-- Add bottom legend -->
+              <breadcrumbTrail
+                slot="legend"
+                slot-scope="{ nodes, colorGetter, width }"
+                :current="nodes.mouseOver"
+                :root="nodes.root"
+                :colorGetter="colorGetter"
+                :from="nodes.clicked"
+                :width="width"
+              />
+
+            </sunburst>
+          </div>
+
         </v-layout>
 
       </v-container>
@@ -41,8 +87,27 @@
 </template>
 
 <script>
-import textButton from "../components/textButton";
-import iconButton from "../components/iconButton";
+import {
+  breadcrumbTrail,
+  highlightOnHover,
+  nodeInfoDisplayer,
+  sunburst,
+  zoomOnClick
+} from "vue-d3-sunburst";
+import "vue-d3-sunburst/dist/vue-d3-sunburst.css";
+
+function map(data) {
+  if (data === null) {
+    return null;
+  }
+  const rawSize = data.Size;
+  const size = rawSize == null ? null : rawSize.Value;
+  const name = data.Name;
+  const rawChildren = data.Children;
+  const children =
+    rawChildren === null ? null : rawChildren.map(child => map(child));
+  return { name, children, size };
+}
 
 const props = {
   viewModel: Object
@@ -50,10 +115,19 @@ const props = {
 
 export default {
   components: {
-    textButton,
-    iconButton
+    breadcrumbTrail,
+    highlightOnHover,
+    nodeInfoDisplayer,
+    sunburst,
+    zoomOnClick
   },
   methods: {},
+  computed: {
+    dataFiles() {
+      const root = this.viewModel.Root;
+      return map(root);
+    }
+  },
   props
 };
 </script>
@@ -61,6 +135,11 @@ export default {
 <style>
 main {
   height: 100%;
+}
+
+.sunburst {
+  height: 550px;
+  width: 100%;
 }
 
 .main-container {

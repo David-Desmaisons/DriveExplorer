@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style>
-.footer-text{
+.footer-text {
   margin: 10px;
 }
 </style>

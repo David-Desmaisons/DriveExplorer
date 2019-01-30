@@ -7,6 +7,8 @@ import { router } from "./route";
 import VueI18n from "vue-i18n";
 import messages from "./message";
 import Notifications from "vue-notification";
+import textButton from "@/components/textButton";
+import iconButton from "@/components/iconButton";
 
 import Vuetify, {
   VApp,
@@ -78,6 +80,8 @@ function install(Vue) {
   Vue.use(Vue_Router);
   Vue.use(VueI18n);
   Vue.use(Notifications);
+  Vue.component("text-button", textButton);
+  Vue.component("icon-button", iconButton);
 }
 
 /*eslint no-unused-vars: ["error", { "args": "none" }]*/

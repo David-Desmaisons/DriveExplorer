@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 import rawVm from "../data/vm";
-import viewModels from "../data/viewModels"
+import viewModels from "../data/viewModels";
 import { install, vueInstanceOption } from "./install";
 import { createVM } from "neutronium-vm-loader";
 
@@ -15,15 +15,15 @@ function updateVM(raw) {
 
 install(Vue);
 
-function vmName(name){
+function vmName(name) {
   return viewModels[name] || "vm";
 }
 
-function getViewModelFileName(name){
+function getViewModelFileName(name) {
   return `./../data/${name}/${vmName(name)}.cjson`;
 }
 
-function getViewModelFile(name){
+function getViewModelFile(name) {
   return import(`./../data/${name}/${vmName(name)}.cjson`);
 }
 
@@ -45,7 +45,9 @@ router.beforeEach((to, _, next) => {
     .catch(error => {
       console.log(error);
       console.log(
-        `Problem loading file: "${getViewModelFileName(name)}/vm.cjson". Please create corresponding file to be able to . ViewModel will be set to null.`
+        `Problem loading file: "${getViewModelFileName(
+          name
+        )}/vm.cjson". Please create corresponding file to be able to . ViewModel will be set to null.`
       );
       router.app.ViewModel.CurrentViewModel = null;
       next();

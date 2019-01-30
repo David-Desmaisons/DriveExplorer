@@ -47,7 +47,8 @@ export default {
   computed: {
     middleIcon() {
       return this.window.State.displayName == "Normal"
-        ? "mdi-window-maximize" : "mdi-window-restore"
+        ? "mdi-window-maximize"
+        : "mdi-window-restore";
     }
   },
 
