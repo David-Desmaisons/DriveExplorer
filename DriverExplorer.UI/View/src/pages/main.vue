@@ -59,7 +59,7 @@
               <nodeInfoDisplayer
                 slot="top"
                 slot-scope="{ nodes }"
-                :current="nodes.mouseOver"
+                :current="nodes.root"
                 :root="nodes.root"
                 :showAllNumber="false"
                 description=""

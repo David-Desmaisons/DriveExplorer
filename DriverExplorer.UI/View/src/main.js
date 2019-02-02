@@ -31,7 +31,7 @@ var options = vueInstanceOption();
 const { router } = options;
 /*eslint no-unused-vars: ["error", { "args": "none" }]*/
 router.beforeEach((to, _, next) => {
-  const name = to.name;
+  const { name } = to;
   if (name === null) {
     next();
     return;
