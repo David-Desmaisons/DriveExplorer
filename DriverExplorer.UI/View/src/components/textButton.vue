@@ -1,7 +1,7 @@
 <template>
-    <v-btn :color="color" :disabled="!canExecute"  @click.stop="execute">
-        {{text}}
-    </v-btn>
+  <v-btn :color="color" :disabled="!canExecute" @click.stop="execute">
+    {{ text }}
+  </v-btn>
 </template>
 
 <script>
@@ -24,5 +24,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

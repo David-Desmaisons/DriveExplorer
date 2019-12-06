@@ -56,6 +56,9 @@ router.beforeEach((to, _, next) => {
     });
 });
 
+
+import vuetify from './vuetify';
+
 const vueRootInstanceOption = Object.assign({}, vueInstanceOption() || {}, {
   render: h =>
     h(App, {
@@ -65,6 +68,6 @@ const vueRootInstanceOption = Object.assign({}, vueInstanceOption() || {}, {
       }
     }),
   data: vm,
-  vuetify: new Vuetify()
+  vuetify: vuetify
 });
 new Vue(vueRootInstanceOption).$mount("#main");
