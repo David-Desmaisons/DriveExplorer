@@ -1,21 +1,14 @@
 <template>
   <main>
     <v-content>
-      <v-container
-        fluid
-        class="main-container"
-      >
-
-        <v-layout
-          row
-          wrap
-        >
+      <v-container fluid class="main-container">
+        <v-layout row wrap>
           <v-flex xs6>
             <v-select
               :label="$t('Resource.SelectDrive')"
               :items="viewModel.Drives"
               item-text="DisplayName"
-              :item-value="(v) => v"
+              :item-value="v => v"
               v-model="viewModel.Drive"
               dark
             ></v-select>
@@ -30,29 +23,16 @@
             ></text-button>
           </v-flex>
 
-          <v-flex
-            xs6
-            v-if="viewModel.Progress"
-          >
-            {{viewModel.Progress}} {{$t('Resource.FilesAnalyzed')}}
+          <v-flex xs6 v-if="viewModel.Progress">
+            {{ viewModel.Progress }} {{ $t("Resource.FilesAnalyzed") }}
           </v-flex>
 
           <div class="sunburst">
-            <sunburst
-              v-if="viewModel.Root"
-              :data="dataFiles"
-            >
-
+            <sunburst v-if="viewModel.Root" :data="dataFiles">
               <!-- Add behaviors -->
               <template slot-scope="{ nodes, actions }">
-                <highlightOnHover
-                  :nodes="nodes"
-                  :actions="actions"
-                />
-                <zoomOnClick
-                  :nodes="nodes"
-                  :actions="actions"
-                />
+                <highlightOnHover :nodes="nodes" :actions="actions" />
+                <zoomOnClick :nodes="nodes" :actions="actions" />
               </template>
 
               <!-- Add information to be displayed on top the graph -->
@@ -75,12 +55,9 @@
                 :from="nodes.clicked"
                 :width="width"
               />
-
             </sunburst>
           </div>
-
         </v-layout>
-
       </v-container>
     </v-content>
   </main>
@@ -131,19 +108,3 @@ export default {
   props
 };
 </script>
-
-<style>
-main {
-  height: 100%;
-}
-
-.sunburst {
-  height: 550px;
-  width: 100%;
-}
-
-.main-container {
-  height: calc(100% - 50px);
-  overflow-y: auto;
-}
-</style>

@@ -10,73 +10,7 @@ import Notifications from "vue-notification";
 import textButton from "@/components/textButton";
 import iconButton from "@/components/iconButton";
 
-import Vuetify, {
-  VApp,
-  VAlert,
-  VCard,
-  VCardText,
-  VCardMedia,
-  VCardTitle,
-  VCardActions,
-  VContent,
-  VContainer,
-  VDivider,
-  VNavigationDrawer,
-  VFooter,
-  VFlex,
-  VLayout,
-  VList,
-  VListTile,
-  VListTileTitle,
-  VListTileAction,
-  VListTileContent,
-  VBtn,
-  VIcon,
-  VImg,
-  VToolbar,
-  VDialog,
-  VTextField,
-  VToolbarSideIcon,
-  VToolbarTitle,
-  VSelect,
-  VSpacer
-} from "vuetify/lib";
-
 function install(Vue) {
-  Vue.use(Vuetify, {
-    components: {
-      VApp,
-      VAlert,
-      VCard,
-      VCardText,
-      VCardMedia,
-      VCardTitle,
-      VCardActions,
-      VContent,
-      VContainer,
-      VDivider,
-      VNavigationDrawer,
-      VFooter,
-      VFlex,
-      VLayout,
-      VList,
-      VListTile,
-      VListTileTitle,
-      VListTileAction,
-      VListTileContent,
-      VBtn,
-      VIcon,
-      VImg,
-      VToolbar,
-      VDialog,
-      VTextField,
-      VToolbarSideIcon,
-      VToolbarTitle,
-      VSelect,
-      VSpacer
-    }
-  });
-
   Vue.use(Vue_Router);
   Vue.use(VueI18n);
   Vue.use(Notifications);

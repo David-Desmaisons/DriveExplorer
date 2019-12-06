@@ -1,4 +1,6 @@
 module.exports = {
-  baseUrl: "./",
-  filenameHashing: false
+  filenameHashing: false,
+  configureWebpack: {
+    devtool: "source-map"
+  }
 };

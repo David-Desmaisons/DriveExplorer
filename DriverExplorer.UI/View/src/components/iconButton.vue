@@ -1,7 +1,7 @@
 <template>
-    <v-btn small icon @click.stop="execute">
-        <v-icon>{{icon}}</v-icon>
-    </v-btn>
+  <v-btn small icon @click.stop="execute">
+    <v-icon>{{ icon }}</v-icon>
+  </v-btn>
 </template>
 
 <script>
@@ -20,5 +20,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

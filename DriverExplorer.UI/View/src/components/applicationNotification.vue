@@ -1,13 +1,22 @@
 <template>
   <div class="application-notifications">
-    <notifications group="app" :reverse="true"  position="top center" :width="700">
+    <notifications
+      group="app"
+      :reverse="true"
+      position="top center"
+      :width="700"
+    >
       <template slot="body" slot-scope="props">
-
-        <v-alert :color="props.item.type" :icon="icon(props.item.type)" :value="true" dismissible @input="props.close()">
-          <h6 class='black--text'>{{props.item.title}}</h6>
-          <p>{{props.item.text}}</p>
+        <v-alert
+          :color="props.item.type"
+          :icon="icon(props.item.type)"
+          :value="true"
+          dismissible
+          @input="props.close()"
+        >
+          <h6 class="black--text">{{ props.item.title }}</h6>
+          <p>{{ props.item.text }}</p>
         </v-alert>
-    
       </template>
     </notifications>
   </div>

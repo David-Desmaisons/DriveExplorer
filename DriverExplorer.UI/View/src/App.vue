@@ -1,14 +1,6 @@
 <template>
-  <v-app
-    dark
-    id="main-application"
-  >
-
-    <side-menu
-      v-model="drawer"
-      :items="menu"
-    >
-    </side-menu>
+  <v-app dark id="main-application">
+    <side-menu v-model="drawer" :items="menu"> </side-menu>
 
     <top-menu
       v-model="drawer"
@@ -17,16 +9,9 @@
     >
     </top-menu>
 
-    <modal
-      v-model="modal"
-      :viewModel="viewModel.Modal"
-    >
-    </modal>
+    <modal v-model="modal" :viewModel="viewModel.Modal"> </modal>
 
-    <application-notification
-      ref="notification"
-      @notified="onNotified"
-    >
+    <application-notification ref="notification" @notified="onNotified">
     </application-notification>
 
     <transition mode="out-in">
@@ -35,7 +20,6 @@
 
     <application-footer :year="viewModel.ApplicationInformation.Year">
     </application-footer>
-
   </v-app>
 </template>
 
@@ -96,11 +80,3 @@ export default {
   }
 };
 </script>
-
-<style lang="stylus">
-@import './stylus/main';
-
-#main-application {
-  -webkit-app-region: no-drag;
-}
-</style>

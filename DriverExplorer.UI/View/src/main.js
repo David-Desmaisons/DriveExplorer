@@ -1,4 +1,6 @@
 import Vue from "vue";
+import Vuetify from "vuetify/lib";
+import "vuetify/dist/vuetify.min.css";
 import App from "./App.vue";
 import rawVm from "../data/vm";
 import viewModels from "../data/viewModels";
@@ -62,6 +64,7 @@ const vueRootInstanceOption = Object.assign({}, vueInstanceOption() || {}, {
         __window__: vm.Window
       }
     }),
-  data: vm
+  data: vm,
+  vuetify: new Vuetify()
 });
 new Vue(vueRootInstanceOption).$mount("#main");
