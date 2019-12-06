@@ -1,6 +1,6 @@
 import Vue from "vue";
-import Vuetify from "vuetify/lib";
 import "vuetify/dist/vuetify.min.css";
+import VuetifyData from "./vuetify";
 import App from "./App.vue";
 import rawVm from "../data/vm";
 import viewModels from "../data/viewModels";
@@ -56,9 +56,6 @@ router.beforeEach((to, _, next) => {
     });
 });
 
-
-import vuetify from './vuetify';
-
 const vueRootInstanceOption = Object.assign({}, vueInstanceOption() || {}, {
   render: h =>
     h(App, {
@@ -68,6 +65,6 @@ const vueRootInstanceOption = Object.assign({}, vueInstanceOption() || {}, {
       }
     }),
   data: vm,
-  vuetify: vuetify
+  vuetify: VuetifyData
 });
 new Vue(vueRootInstanceOption).$mount("#main");
