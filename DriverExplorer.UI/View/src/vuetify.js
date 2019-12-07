@@ -13,16 +13,27 @@ import Vuetify, {
   VNavigationDrawer,
   VFooter,
   VFlex,
+  VGrid,
   VLayout,
   VList,
+  VListItem,
+  VListItemTitle,
+  VListItemAction,
+  VListItemContent,
+  VAppBar,
+  VRow,
+  VAppBarNavIcon,
   VBtn,
   VIcon,
   VImg,
   VToolbar,
+  VTooltip,
   VDialog,
   VTextField,
   VToolbarTitle,
   VSelect,
+  VCol,
+  VSelectList,
   VSpacer
 } from "vuetify/lib";
 
@@ -32,6 +43,7 @@ Vue.use(Vuetify, {
     VApp,
     VAlert,
     VCard,
+    VGrid,
     VCardText,
     VCardTitle,
     VCardActions,
@@ -43,6 +55,15 @@ Vue.use(Vuetify, {
     VFlex,
     VLayout,
     VList,
+    VListItem,
+    VRow,
+    VCol,
+    VTooltip,
+    VListItemTitle,
+    VListItemAction,
+    VListItemContent,
+    VAppBar,
+    VAppBarNavIcon,
     VBtn,
     VIcon,
     VImg,
@@ -51,6 +72,7 @@ Vue.use(Vuetify, {
     VTextField,
     VToolbarTitle,
     VSelect,
+    VSelectList,
     VSpacer
   }
 });
@@ -58,16 +80,14 @@ Vue.use(Vuetify, {
 const opts = {
   theme: {
     themes: {
-      light: {
+      dark: {
         primary: "#1976D2",
         secondary: "#424242",
         accent: "#82B1FF",
         error: "#FF5252",
         info: "#2196F3",
-        success: "#4CAF50"
+        success: "#4CAF50" 
       }
-      // dark: {
-      // }
     }
   }
 };

@@ -1,6 +1,6 @@
 <template>
-  <v-toolbar id="top-menu" :clipped-left="true" absolute app>
-    <v-toolbar-side-icon @click.stop="toggleMenu"></v-toolbar-side-icon>
+  <v-toolbar id="top-menu">
+    <v-app-bar-nav-icon @click.stop="toggleMenu"></v-app-bar-nav-icon>
 
     <v-toolbar-title v-text="title"></v-toolbar-title>
 

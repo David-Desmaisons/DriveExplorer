@@ -12,21 +12,21 @@
     <v-divider></v-divider>
 
     <v-list>
-      <v-list-tile
+      <v-list-item
         v-for="(item, i) in items"
         :key="i"
         :to="item.to"
         router
         ripple
       >
-        <v-list-tile-action>
+        <v-list-item-action>
           <v-icon light v-html="item.icon"></v-icon>
-        </v-list-tile-action>
+        </v-list-item-action>
 
-        <v-list-tile-content>
-          <v-list-tile-title v-text="$t(item.title)"></v-list-tile-title>
-        </v-list-tile-content>
-      </v-list-tile>
+        <v-list-item-content>
+          <v-list-item-title v-text="$t(item.title)"></v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
     </v-list>
   </v-navigation-drawer>
 </template>
